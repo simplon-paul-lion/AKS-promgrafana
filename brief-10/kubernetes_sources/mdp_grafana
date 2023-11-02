@@ -1,0 +1,4 @@
+QqFEB2K56DXiG8kxqBOQ6gNNKiyo7pneBuLjgXpt
+
+helm template prometheus-community/prometheus
+

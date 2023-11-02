@@ -1,0 +1,5 @@
+88.166.162.96
+
+kubectl patch svc traefik -p '{"spec":{"externalTrafficPolicy":"Local"}}
+
+FFqknTpOsjzpUErTnHKpvED5
