@@ -29,7 +29,7 @@ variable "aks_node_pool_config" {
 variable "manifest" {
   type = map(string)
   default = {
-    "vote":"var.vote_manifest"
+    "vote":"vote_manifest"
     "autoscale_vote":"autoscale_vote_manifest"
     "vote_service":"vote_manifest"
     "redis":"redis_manifest"
@@ -37,7 +37,6 @@ variable "manifest" {
     "secrets":"secrets_manifest"
     "storage":"storage_manifest"
     "secrets2":"secrets2_manifest"
-
   }
   
 }
