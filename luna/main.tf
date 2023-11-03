@@ -49,6 +49,7 @@ module "linux_vm" {
     source = "../modules_terraform/linux_vm"
     name = var.name
     admin = var.admin
+    admin_pwd = var.admin_pwd
     location = var.location
     subnet_id = module.subnet.subnet_id
     pub_id = module.public_ip.pub_id

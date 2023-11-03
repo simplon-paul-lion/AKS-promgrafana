@@ -14,11 +14,12 @@ resource "azurerm_network_interface" "nic" {
 }
 
 resource "azurerm_linux_virtual_machine" "redhat" {
-  name                = format("%s-vm",var.name)
-  resource_group_name = var.name
-  location            = var.location
-  size                = "Standard_D2_v2"
-  admin_username      = "ansible"
+  name                  = format("%s-vm",var.name)
+  resource_group_name   = var.name
+  location              = var.location
+  size                  = "Standard_D2_v2"
+  admin_username        = var.admin
+  admin_password = var.admin_pwd
   network_interface_ids = [azurerm_network_interface.nic.id]
 
   admin_ssh_key {
