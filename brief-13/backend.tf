@@ -3,6 +3,6 @@ terraform {
     resource_group_name  = "paul_backend"
     storage_account_name = "paulterraformbackend"
     container_name       = "paultfstate"
-    key                  = "infra-2"
+    key                  = "bf13"
   }
 }

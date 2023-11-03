@@ -12,7 +12,7 @@
 - name: Save audit report
   fetch:
     src: /tmp/anssi_report.html
-    dest: /home/paul/AKS-promgrafana/infra-2/audit_reports/anssi_report.html 
+    dest: /home/paul/AKS-promgrafana/brief-13/audit_reports/anssi_report.html 
     flat: yes
   tags:
     - verification

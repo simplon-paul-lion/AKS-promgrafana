@@ -15,6 +15,6 @@
     - role : ./roles/interval_failedpwd
     - role : ./roles/lockout
     - role : ./roles/lockout_time
-    - role : ./roles/priv_escalation_auth
     - role : ./roles/root_failedpwd
-    - role : ./roles/scap_scan
+    # - role : ./roles/priv_escalation_auth
+    - role : ./roles/scan_scap

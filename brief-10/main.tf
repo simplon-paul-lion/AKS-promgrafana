@@ -30,6 +30,5 @@ module "aks" {
 
 resource "kubernetes_manifest" "redis" {
     manifest = yamldecode(var.redis_manifest)
-  
 }
 
