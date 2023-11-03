@@ -2,7 +2,6 @@ module "resource_group"{
     source = "../modules_terraform/resource_group"
     name = var.name
     location = var.location
-
 }
 
 module "vnet" {
@@ -10,7 +9,6 @@ module "vnet" {
     name = var.name
     location = var.location
     cidr = var.cidr
-
     depends_on = [ module.resource_group ]
 }
 

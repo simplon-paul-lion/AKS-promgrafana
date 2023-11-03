@@ -6,6 +6,10 @@ variable "admin" {
   default = "dunAdmin"
 }
 
+variable "admin_pwd" {
+  default = "QdCe2HmLf$Bt@a8HHdzK"
+}
+
 variable "location" {
     default = "westeurope"
 }
