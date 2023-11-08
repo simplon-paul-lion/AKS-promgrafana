@@ -29,7 +29,6 @@ module "aks" {
 }
 
 resource "kubernetes_manifest" "redis" {
-    for_each = var.manifest
-    manifest =format("./kubernetes/%s",yamldecode(each.value)) 
+    manifest =yamldecode(var.redis_manifest) 
 }
 
