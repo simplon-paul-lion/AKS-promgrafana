@@ -30,5 +30,11 @@ module "aks" {
 
 resource "kubernetes_manifest" "redis" {
     manifest =yamldecode(var.redis_manifest) 
+depends_on [module.aks]
+}
+
+resource "kubernetes_manifest" "storage" {
+    manifest =yamldecode(var.storage_manifest) 
+depends_on [module.aks]
 }
 
